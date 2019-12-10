@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/CSS/Jarditou.css">
+    <link rel="stylesheet" href="asset/CSS/media.css"> 
+    <title>Jarditou</title>
+</head>
+<body>
+    <header>
+        <section class="Logosec">
+            <img src="asset/images/jarditou_logo.jpg" width="35%" height="auto" alt="Logo Jarditou" class="logo">
+        </section>
+        <aside class="slogan" title="Notre devise">
+            TOUT LE JARDIN
+        </aside>
+    </header>
+    <nav>
+        <ul class="Menu">
+            <li class="navcat">
+                <a href="jarditou.html" title="Accueil" class="menuprin">Accueil</a>
+            </li>
+            <li class="navcat">
+                <a href="Tableau.html" title="Produits" class="menuprin">Produits</a>
+            </li>
+            <li class="navcat">
+                <a href="Contact.html" title="Contact" class="pageactu">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <img src="asset/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!" class="imgpromo"><br>
+    <h1>
+        Contact
+    </h1>
+    <hr class="hracceuil">
+    <ins class="stobligatoires"> * Ces zones sont obligatoires </ins>
+    <form action="http://bienvu.net/script.php" method="POST">
+        <fieldset aria-colcount="50">
+            <legend class="Legende">
+                Coordonnées
+            </legend>
+            <label for="nom" id="UrNam">Nom<ins class="obligatoires">*</ins></label><input type="text" name="nom" required title="Renseigner votre nom"><br>
+            <label for="prénom">Prénom<ins class="obligatoires">*</ins></label><input type="text" name="prénom" required title="Renseigner votre prénom"><br>
+            <br>
+            <label for="Sexe">Sexe<ins class="obligatoires">*</ins></label>
+            <input type="radio" name="Sexe" value="Féminin" required class="Radio"> Féminin
+            <input type="radio" name="Sexe" value="Masculin" required class="Radio"> Masculin <br>
+            <br>
+            <label for="Date de naissance">Date de Naissances<ins class="obligatoires">*</ins></label><input type="date" name="Date" value="01-01-2000" required title="Renseigner votre Date de naissance"><br>
+            <label for="Code postal">Code postal</label><input type="text" name="Code postal" title="Code postal (exemple: 75000)" id="code"><br>
+            <label for="Adresse">Adresse</label><input type="text" name="Adresse" title="Adresse"><br>
+            <label for="Ville">Ville</label><input type="text" name="Ville" title="Ville"><br>
+            <label for="Email">Email<ins class="obligatoires">*</ins></label><input type="email" required title="Renseigner votre Email" class="endfield"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend class="Legende">
+                Votre demande
+            </legend>
+            <label for="Sujet">Sujet<ins class="obligatoires">*</ins></label>
+            <select name="Sujet" size="1" required title="Selectionner un sujet" id="selectionner">
+                <option value="Mes commandes"> Mes commandes</option>
+                <option value="Question">Question sur produit</option>
+                <option value="Réclamation">Réclamation</option>
+                <option value="Autres">Autres</option>
+            </select><br>
+            <label for="Questions">Questions<ins class="obligatoires">*</ins></label><br>
+            <textarea name="Questions" cols="50" rows="10" required title="Remplissez le champs des questions" class="Area"></textarea>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="Acceptation" value="Accpete" required title="Veuillez accepter le traitement du formulaire" id="checkbox"><label for="Accepte Form" id="Textaccept">J'accepte le traitement informatique de ce formulaire.</label><br>
+        <br>
+        <section class="formend">
+            <input type="submit" value="Envoyer" onclick="testcode();" class="envform" id="envoyer" title="Envoyer">
+            <input type="reset" value="Annuler" class="envform" id="annuler" title="Annuler"><br>
+        </section>
+    </form>
+    <hr class="hrfooter">
+    <br>
+    <footer>
+        <ul class="Mentions">
+            <li>
+                <h5><a href="Mentions.html" title="Mentions">Mentions légales</a></h5>
+            </li>
+            <li>
+                <h5><a href="Horaires.html" title="Horaires">Horaires</a></h5>
+            </li>
+            <li>
+                <h5><a href="Plan.html" title="Plan">Plan du site</a></h5>
+            </li>
+        </ul>
+    </footer>
+    <script src="ex1.js"></script>
+</body>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</html> 
